@@ -247,6 +247,14 @@ footer strong{display:block;color:#fff;font-size:16px;margin-bottom:2px}
   .qr{width:200px;margin:0 auto}
 }
 .insecable{white-space:nowrap}
+.boul{display:grid;gap:12px;margin-top:14px}
+.boul-item{background:var(--teinte);border-radius:var(--r-m);padding:16px 18px}
+.boul-tete{display:flex;flex-direction:column;gap:2px}
+.boul-tete strong{font-size:18px;font-weight:650}
+.boul-tete .dist{margin-top:0}
+.boul-item>.muted{margin-top:2px}
+.horaires{list-style:none;margin-top:10px;font-size:15px;line-height:1.5}
+.lien-itin{display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:9px 14px;border-radius:99px;background:#fff;color:var(--accent);font-weight:600;font-size:14px;text-decoration:none}
 
 </style>
 </head>
@@ -380,6 +388,24 @@ footer strong{display:block;color:#fff;font-size:16px;margin-bottom:2px}
   <section id="quartier">
     <h2>Le quartier</h2>
     <div class="quartier">
+      <div class="bloc large">
+        <div class="ic-rond ic-ocre"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11a4 4 0 0 1 0-6h14a4 4 0 0 1 0 6v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1Z"/><path d="M9 11v5M15 11v5"/></svg></div>
+        <h3>Boulangeries les plus proches</h3>
+        <div class="boul">
+          <div class="boul-item">
+            <div class="boul-tete"><strong>Le Pain de Pierre</strong><span class="dist"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="13" cy="4" r="2"/><path d="m9 21 2-6 3 3v3M7 12l3-5 4 1 2 4M11 15l-1-5"/></svg> 13 min à pied</span></div>
+            <p class="muted">19 Rue des Paillères</p>
+            <ul class="horaires"><li>Mardi au samedi : 6h00 – 14h00 et 16h00 – 19h45</li><li>Dimanche : 6h15 – 15h00</li><li>Fermé le lundi</li></ul>
+            <a class="lien-itin" href="https://www.google.com/maps/dir/?api=1&destination=19%20Rue%20des%20Paill%C3%A8res%2C%2013920%20Saint-Mitre-les-Remparts" target="_blank" rel="noopener"><svg class="i i-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Itinéraire</a>
+          </div>
+          <div class="boul-item">
+            <div class="boul-tete"><strong>Marie Blachère</strong><span class="dist"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16V11l2-5h10l2 5v5M5 16h14M5 16v2M19 16v2"/><circle cx="8" cy="13" r="1"/><circle cx="16" cy="13" r="1"/></svg> 4 min en voiture</span></div>
+            <p class="muted">Avenue des Peupliers, zone des Étangs</p>
+            <ul class="horaires"><li>Lundi au samedi : 7h00 – 19h30</li><li>Fermé le dimanche</li></ul>
+            <a class="lien-itin" href="https://www.google.com/maps/dir/?api=1&destination=Marie%20Blach%C3%A8re%2C%20Avenue%20des%20Peupliers%2C%2013920%20Saint-Mitre-les-Remparts" target="_blank" rel="noopener"><svg class="i i-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Itinéraire</a>
+          </div>
+        </div>
+      </div>
       <div class="bloc large">
         <div class="ic-rond ic-canal"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9 5 4h14l1 5M4 9v11h16V9M4 9h16M9 20v-6h6v6"/></svg></div>
         <h3>Petits commerces</h3>
